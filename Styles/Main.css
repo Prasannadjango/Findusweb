@@ -1,0 +1,375 @@
+@import "bootstrap5.css";
+@import "Responsive.css";
+@import "Swiper.css";
+
+@font-face {
+  font-family: "Webfont";
+  src: url(../Fonts/Montserrat-Regular.otf),
+    url(../Fonts/Montserrat-Regular.ttf), url(../Fonts/Montserrat-Regular.woff),
+    url(../Fonts/Montserrat-Regular.woff2);
+}
+
+:root {
+  --primary-color: black;
+  --secondary-color: #c551d0;
+  --gradient-color:linear-gradient( 105.2deg, rgba(197,81,208,1) 22.2%, rgba(180,23,136,1) 100.2% );
+}
+body {
+  background-color: black;
+}
+
+* {
+  font-family: "webfont";
+}
+.electric {
+  background-color: var(--secondary-color);
+  color: white;
+  padding:3px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 22px;
+  left: -6px;
+  z-index: 2;
+  font-size: 14px;
+  transform: rotate(315deg);
+  font-weight: bold !important;
+ 
+ 
+}
+.electric:before {
+  border-radius: 3px;
+  content: "";
+width: 0;
+  height: 0;
+  border-style: solid;
+  transform: rotate(45deg);
+  border-width: 20px 20px 0 20px;
+  border-color: var(--secondary-color) transparent transparent transparent;
+  position: absolute;
+  right: -27px;
+  bottom: -3px;
+}
+
+.electric:after {
+  border-radius: 4px;
+  content: "";
+width: 0;
+  height: 0;
+  border-style: solid;
+  transform: rotate(-45deg);
+  border-width: 20px 20px 0 20px;
+  border-color: var(--secondary-color) transparent transparent transparent;
+  position: absolute;
+  left: -27px;
+  bottom: -3px;
+}
+.navbar {
+  border-bottom: 1px solid #fff !important;
+}
+.navbar-nav{
+  align-items: center;
+}
+.Navbar-btn{
+  border-radius: 5px;
+  color: #fff !important;
+  padding:10px 30px;
+  background-image: linear-gradient( 105.2deg,  rgba(197,81,208,1) 22.2%, rgba(180,23,136,1) 100.2% );
+}
+.Location_container > span > svg {
+  color: var(--secondary-color);
+}
+.Location_container > div > h6:nth-child(2) {
+  color: var(--secondary-color);
+}
+.Popularcity_list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 16px;
+}
+.Popularcity_list > li {
+  padding: 10px 7px;
+}
+.Searchbar_container > form {
+  border-radius: 40px;
+  border: 0;
+  padding: 8px;
+}
+.Searchbar_container > form > div:nth-child(1) > input {
+  border-radius: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  outline: none;
+  font-size: 14px !important;
+  box-shadow: none;
+}
+.Searchbar_container > form > div:nth-child(2) {
+  border-radius: inherit;
+}
+.Searchbar_container > form > div:nth-child(2) > button {
+  border-radius: 40px;
+  border: 0;
+  padding: 9px;
+  font-weight: bold;
+  background-color: var(--secondary-color);
+}
+.Filter_link {
+  color: var(--secondary-color) !important;
+}
+.Overflow_txt {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Border-10 {
+  border-radius: 10px;
+}
+.Price_txt {
+  font-size: 12px;
+}
+.Border-10 > .card {
+  border-radius: inherit;
+}
+.Border-10 > .card > img,
+.Profilecard_border {
+  border-radius: 10px 10px 0px 0px;
+}
+.Available_badge {
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.Available_badge > span ,
+.whatulike-label > span{
+  background-color: transparent;
+  width: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+  background-image: url(/Images/Kiss\ Mark.png);
+  height: 25px;
+  display: block;
+}
+.Available_badge > p {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+  font-weight: bold;
+  background-color: transparent;
+}
+.B-inherit {
+  border-radius: inherit;
+}
+.Profileverified_bagde {
+  
+  width: fit-content;
+  color: #fff;
+  padding: 4px 7px;
+  position: absolute;
+  bottom: 4%;
+  left: 5px;
+  border-radius: 30px;
+}
+.Profileverified_bagde > p {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.Carouselprofile_badge {
+
+  width: fit-content;
+  color: #fff;
+  padding: 0px 6px;
+  position: absolute;
+  bottom: 33%;
+
+  border-radius: 30px;
+}
+.Carouselprofile_badge > p {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.Profilecard_header {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Location_txt {
+  font-size: 11px;
+}
+.Card_image {
+ 
+  height: 250px !important;
+  object-fit: cover;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--secondary-color) !important;
+}
+
+.swiper-pagination-bullet {
+  background: var(--secondary-color) !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+.Touring_label {
+  width: fit-content;
+  padding: 5px;
+  background-color: #fff;
+  position: absolute;
+  right: 2%;
+  font-size: 14px;
+  bottom: 3%;
+  border: 2px solid var(--secondary-color);
+}
+.btn_gradient {
+  background-image: radial-gradient(
+    circle farthest-corner at 10.2% 55.8%,
+    rgba(252, 37, 103, 1) 0%,
+    rgba(250, 38, 151, 1) 46.2%,
+    rgba(186, 8, 181, 1) 90.1%
+  );
+}
+.Touring_label > div:nth-child(1) {
+  background-color: transparent;
+  width: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-image: url(/Images/Airport.png);
+  height: 25px;
+  display: block;
+}
+.Loginpage_container {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+.Loginpage_container > div {
+  border-radius: 10px;
+}
+.Login_btn,
+.Favorite_btn {
+  background-color: var(--secondary-color);
+}
+.Reset_btn {
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  color: var(--secondary-color);
+}
+.Plans-cards {
+  border-top: 7px solid var(--secondary-color);
+  border-radius: 5px;
+  background-color: #fff;
+}
+.Plans-cards > div:nth-child(1):after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.Plan-lists > div > img {
+  width: 25px;
+  height: 25px;
+}
+.Mainpic-container {
+  border-radius: 15px;
+}
+.Secondary-images > div {
+  width: 100%;
+  max-width: 110px;
+  border-radius: 10px;
+  height: 110px;
+  margin: 13px;
+  object-fit: contain;
+}
+.Activenow_container > span {
+  width: 16px;
+  height: 16px;
+  content: "";
+  background-color: #359839;
+  border-radius: 30px;
+}
+.Myfacts-container > div:nth-child(1):after,
+.MyAvailblity-container > div:first-child > div:first-child:after,
+.Myrates-container > div:first-child > div:first-child:after,
+.Underline-heading > div:first-child:after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  position: absolute;
+}
+
+.Myfacts-lists > li::marker {
+  color: #c551d0;
+}
+.Availablility-label {
+  background-color: var(--secondary-color);
+  width: fit-content;
+  height: fit-content;
+}
+.Availablility-label > div:first-child {
+  width: 26px;
+  height: 26px;
+}
+.Incall-price > div::before,
+.Thingsprefer-container > div::before {
+  content: "";
+  border-radius: 50px;
+  width: 14px;
+  height: 14px;
+  background-color: var(--secondary-color);
+}
+.Thingsprefer-container > div::before {
+  margin-right: 10px;
+}
+.Tourschedule-data {
+  font-size: 19px;
+}
+.Tourschedule-data::before {
+  background-image: url("/Images/Airport.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  content: "";
+  background-color: transparent;
+}
+.Aboutme-text {
+  font-size: 18px;
+}
+.Thingsprefer-container > div {
+  width: fit-content;
+  margin: 0 10px;
+}
+.contact-container > div >button{
+  width: 100%;
+}
+.similarprofile-container{
+  overflow-x: scroll;
+}
+.wtl-container>div:first-child{
+  border-radius: 15px;
+  height: 200px;
+  border: 4px solid var(--secondary-color);
+}
+.wtl-container>div:first-child>img{
+  object-fit: cover;
+  border-radius: inherit;
+}

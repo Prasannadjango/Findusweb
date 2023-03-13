@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Styles/Main.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- Navigation bar Starts -->
+  <nav class="navbar navbar-expand-lg text-white">
+    <div class="container-fluid">
+      <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+            class="bi bi-justify-left text-white" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </span>
+      </button>
+      <a class="navbar-brand " href="#">
+        <img src="/Images/finduslogo.png" />
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto  mb-2 mb-lg-0 text-white py-3">
+          <li class="nav-item">
+            <a class="nav-link active text-white text-decoration-none fw-bold" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white text-decoration-none fw-bold" href="Planspage.html">Advertisement</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white text-decoration-none fw-bold" href="Registeration.html">Sign-up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white text-decoration-none fw-bold" href="Login.html">
+              <button class="btn Navbar-btn  fw-bold">Login Now</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation bar Ends -->
+
+  <div class="Main-container px-3">
+    <!-- Cities and search bar section Starts -->
+    <div class="d-flex align-items-center align-content-center Location_container p-3">
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt-fill"
+          viewBox="0 0 16 16">
+          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+        </svg>
+      </span>
+      <div class="d-flex align-items-center">
+        <h6 class="fw-bold text-white m-0 ps-2">Your are in -</h6>
+        <h6 class="fw-bold ps-1 m-0">Sydney</h6>
+      </div>
+    </div>
+    <!-- Cities and search bar section Ends -->
+
+    <!-- Popular cities start -->
+    <div class="Popularcity_container">
+      <h5 class="text-white">Find Models on Popular cities</h5>
+    </div>
+
+
+    <div class="d-flex flex-wrap">
+      <ul class="Popularcity_list p-0 m-0">
+        <li>Melbourne</li>
+        <li>Sydney</li>
+        <li>Brisbane</li>
+        <li>Sydney</li>
+        <li>Geelong</li>
+        <li>Logan city</li>
+      </ul>
+    </div>
+    <!-- Popular cities End -->
+
+    <!-- Search bar container start-->
+
+    <div class="Searchbar_container pt-4">
+      <form class="d-flex bg-white align-items-center">
+        <div class="col-xl-11 col-9">
+          <input class="form-control border-0 fs-6" placeholder="Find models by Location/Username .." />
+        </div>
+        <div class="col-xl-1 col-3 bg-white">
+          <button type="submit" class="w-100 btn text-white">Search</button>
+        </div>
+      </form>
+      <div class="d-flex Advsearch-container pt-2">
+        <a href="" class="Filter_link text-decoration-none pt-2 pe-1 fw-bold">
+          Advanced search
+        </a>
+      </div>
+    </div>
+    <!-- Search bar container ends-->
+    <div class="Ad-btn d-flex py-3">
+      <button class="btn Login_btn fw-bold text-white px-4">
+        Ad
+      </button>
+    </div>
+    <!-- Latest profiles container starts-->
+    <div class="Latestprofiles_container">
+      <h4 class="text-white fw-bold pb-3">Latest Profiles</h4>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide ">
+            <div class="card w-100">
+              <img src="Images/corey-saldana-d3yqfGgjYoA-unsplash.jpg" class="card-img-top Card_image" alt="..." />
+              <div class="Available_badge">
+                <span></span>
+                <p class="m-0 ps-1">Available 10 mins ago</p>
+              </div>
+              <div class="card-body B-inherit px-1 bg-white py-2">
+                <div class="d-flex align-items-center bg-white justify-content-between">
+                  <div class="bg-white">
+                    <p class="bg-white fw-bold m-0 Price_txt">From $100</p>
+                  </div>
+
+                </div>
+                <h5 class="m-0 text-start fw-bold py-1 Profilecard_header">
+                  Andrea
+                </h5>
+                <div class="d-flex align-items-center bg-white justify-content-between">
+                  <div class="d-flex align-items-center align-content-center Location_container">
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                      </svg>
+                    </span>
+                    <div class="d-flex align-items-center">
+                      <h6 class="fw-bold m-0 text-black-50 Location_txt">
+                        Sydney
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="fs-6 fw-bold">Escort</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide ">
+            <div class="card w-100">
+              <img src="Images/radu-florin-OP8655xgBjo-unsplash.jpg" class="card-img-top Card_image" alt="..." />
+              <div class="Available_badge">
+                <span></span>
+                <p class="m-0 ps-1">Available 10 mins ago</p>
+              </div>
+              <div class="card-body B-inherit px-1 bg-white py-2">
+                <div class="d-flex align-items-center bg-white justify-content-between">
+                  <div class="bg-white">
+                    <p class="Price_txt bg-white fw-bold m-0">From $100</p>
+                  </div>
+
+                </div>
+                <h5 class="m-0 text-start fw-bold py-1 Profilecard_header">
+                  Andrea
+                </h5>
+                <div class="d-flex align-items-center bg-white justify-content-between">
+                  <div class="d-flex align-items-center align-content-center Location_container">
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                      </svg>
+                    </span>
+                    <div class="d-flex align-items-center">
+                      <h6 class="fw-bold m-0 text-black-50 Location_txt">
+                        Sydney
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="fs-6 fw-bold">Escort</div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center Carouselprofile_badge">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                  class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                </svg>
+              </span>
+              <p class="m-0 ps-1">Verified Profile</p>
+            </div>
+          </div>
+          <div class="swiper-slide ">
+            <div class="card w-100">
+              <img src="Images/rafaella-mendes-diniz-et_78QkMMQs-unsplash.jpg" class="card-img-top Card_image"
+                alt="..." />
+              <div class="Available_badge">
+                <span></span>
+                <p class="m-0 ps-1">Available 10 mins ago</p>
+              </div>
+              <div class="card-body B-inherit px-1 bg-white py-2">
+                <div class="d-flex align-items-center bg-white justify-content-between">
+                  <div class="bg-white">
+                    <p class="Price_txt bg-white fw-bold m-0">From $100</p>
+                  </div>
+
+                </div>
+                <h5 class="m-0 text-start fw-bold py-1 Profilecard_header">
+                  Andrea
+                </h5>
+                <div class="d-flex align-items-center bg-white justify-content-between">
+                  <div class="d-flex align-items-center align-content-center Location_container">
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                      </svg>
+                    </span>
+                    <div class="d-flex align-items-center">
+                      <h6 class="fw-bold m-0 text-black-50 Location_txt">
+                        Sydney
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="fs-6 fw-bold">Escort</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide ">
+            <div class="card w-100">
+              <img src="Images/aykut-aktas-Dy4-Fer7zwc-unsplash.jpg" class="card-img-top Card_image" alt="..." />
+              <div class="Available_badge">
+                <span></span>
+                <p class="m-0 ps-1">Available 10 mins ago</p>
+              </div>
+              <div class="card-body B-inherit px-1 bg-white py-2">
+                <div class="d-flex align-items-center bg-white justify-content-between">
+                  <div class="bg-white">
+                    <p class="bg-white Price_txt fw-bold m-0">From $100</p>
+                  </div>
+
+                </div>
+                <h6 class="m-0 text-start fw-bold py-1 Profilecard_header">
+                  Andrea
+                </h6>
+                <div class="d-flex align-items-center bg-white justify-content-between">
+                  <div class="d-flex align-items-center align-content-center Location_container">
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                      </svg>
+                    </span>
+                    <div class="d-flex align-items-center">
+                      <h6 class="fw-bold m-0 text-black-50 Location_txt">
+                        Sydney
+                      </h6>
+                    </div>
+                  </div>
+                  <div class=" fw-bold">Escort</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination position-static my-4"></div>
+      </div>
+    </div>
+    <!-- Latest profiles container Ends-->
+
+    <div class="Whatulike-container py-5">
+      <h4 class="fw-bold text-white">what Type of Model Do u like?</h4>
+      <div class="row py-3">
+        <div class="wtl-container col-xl-3 col-6 mb-5">
+          <div class="m-2">
+            <img src="/Images/aykut-aktas-Dy4-Fer7zwc-unsplash.jpg" class="w-100 h-100" />
+
+            <div class="whatulike-label d-flex align-items-center justify-content-center">
+              <span></span>
+              <h5 class="text-white fw-bold m-0 py-3">Touring</h5>
+            </div>
+          </div>
+        </div>
+        <div class="wtl-container col-xl-3 col-6 mb-5">
+          <div class="m-2">
+            <img src="/Images/corey-saldana-d3yqfGgjYoA-unsplash.jpg" class="w-100 h-100" />
+
+            <div class="whatulike-label d-flex align-items-center justify-content-center">
+              <span></span>
+              <h5 class="text-white fw-bold m-0 py-3">Elite</h5>
+            </div>
+          </div>
+        </div>
+        <div class="wtl-container col-xl-3 col-6 ">
+          <div class="m-2">
+            <img src="/Images/aykut-aktas-Dy4-Fer7zwc-unsplash.jpg" class="w-100 h-100" />
+
+            <div class="whatulike-label d-flex align-items-center justify-content-center">
+              <span></span>
+              <h5 class="text-white fw-bold m-0 py-3">under $150</h5>
+            </div>
+          </div>
+        </div>
+        <div class="wtl-container col-xl-3 col-6 ">
+          <div class="m-2">
+            <img src="/Images/corey-saldana-d3yqfGgjYoA-unsplash.jpg" class="w-100 h-100" />
+
+            <div class="whatulike-label d-flex align-items-center justify-content-center">
+              <span></span>
+              <h5 class="text-white fw-bold m-0 py-3">Incall Escorts</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popular models section starts -->
+    <div class="Popularmodels_container pt-3">
+      <h4 class="text-white fw-bold pb-3">Popular Models</h4>
+      <div class=" row-cols-sm-2 row-cols-1 ">
+        <div class="col">
+          <div class="card w-100 mb-3">
+            <span class="electric">Featured</span>
+            <div class="position-relative">
+              <img src="Images/corey-saldana-d3yqfGgjYoA-unsplash.jpg" class="card-img-top Profilecard_border"
+                alt="..." />
+              <div class="d-flex align-items-center Profileverified_bagde ">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                  </svg>
+                </span>
+                <p class="m-0 ps-1">Verified Profile</p>
+              </div>
+              <div class=" d-flex align-items-center Touring_label">
+                <div></div>
+                <div class="d-flex align-items-center">
+                  <span class="fw-bold">Feb 23-25:</span>
+                  <span class="text-secondary ps-1">Sydney</span>
+                </div>
+              </div>
+            </div>
+            <div class="Available_badge justify-content-center py-1 ">
+              <span></span>
+              <p class="m-0 ps-1 fs-6">Available 10 mins ago</p>
+            </div>
+            <div class="card-body B-inherit px-1 bg-white py-2">
+              <div class="d-flex align-items-center bg-white justify-content-between">
+                <div class="bg-white d-flex align-items-center">
+                  <p class="m-0 bg-white pe-1">
+                    From
+                  </p>
+                  <p class="bg-white fw-bold m-0 Price_txt fs-5 ">$100</p>
+                </div>
+
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="m-0 text-start fw-bold py-1 Profilecard_header">
+                    Andrea
+                  </h5>
+                </div>
+                <div>
+                  <p class="m-0">
+                    25 year
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center bg-white justify-content-between">
+                <div class="d-flex align-items-center align-content-center Location_container">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                      class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg>
+                  </span>
+                  <div class="d-flex align-items-center">
+                    <h6 class="fw-bold m-0 text-black-50 Location_txt">
+                      Sydney
+                    </h6>
+                  </div>
+                </div>
+                <div class="fs-6 fw-bold">Escort</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- External scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="Scripts/Main.js"></script>
+</body>
+
+</html>
