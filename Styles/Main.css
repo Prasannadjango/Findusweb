@@ -288,13 +288,16 @@ width: 0;
 .Mainpic-container {
   border-radius: 15px;
 }
-.Secondary-images > div {
+
+.Secondary-images > .col-4>div {
+  height: 160px;
+  border-radius: 15px;
   width: 100%;
-  max-width: 110px;
-  border-radius: 10px;
-  height: 110px;
-  margin: 13px;
-  object-fit: contain;
+  margin: 10px 0;
+}
+.Secondary-images > .col-4>div>img{
+  object-fit: cover;
+  border-radius: inherit;
 }
 .Activenow_container > span {
   width: 16px;
@@ -313,7 +316,9 @@ width: 0;
   background-color: var(--secondary-color);
   position: absolute;
 }
-
+.Myfacts-container>div:nth-child(2){
+  padding: 10px;
+}
 .Myfacts-lists > li::marker {
   color: #c551d0;
 }
@@ -372,4 +377,15 @@ width: 0;
 .wtl-container>div:first-child>img{
   object-fit: cover;
   border-radius: inherit;
+}
+.Sayword-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Sayword-container>div{
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  padding:10px;
+  
 }
