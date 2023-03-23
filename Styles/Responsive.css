@@ -30,3 +30,35 @@
     margin: 0 !important;
   }
 }
+@media (min-width: 426px) and (max-width: 768px){
+  .Location_container {
+    justify-content: end;
+  }
+  .Profile-sectionmain > div:nth-child(2) {
+    flex-direction: column;
+  }
+  .Main-container,
+  .Myfacts-container,
+  .Myrates-container,
+  .MyAvailblity-container > div:first-child {
+    padding: 10px;
+  }
+  .navbar-brand {
+    margin: 0 auto;
+  }
+  .Advsearch-container,.Ad-btn{
+    justify-content: center;
+  }
+  .navbar-nav {
+    align-items: normal !important;
+  }
+  .nav-link {
+    padding: 17px 0 !important;
+  }
+  .Latestprofiles_container,.Whatulike-container,.Popularmodels_container>h4{
+    text-align: center;
+  }
+  .modal-dialog{
+    margin: 0 !important;
+  }
+}
