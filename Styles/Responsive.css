@@ -26,4 +26,7 @@
   .Latestprofiles_container,.Whatulike-container,.Popularmodels_container>h4{
     text-align: center;
   }
+  .modal-dialog{
+    margin: 0 !important;
+  }
 }

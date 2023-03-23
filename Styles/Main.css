@@ -68,6 +68,11 @@ width: 0;
 }
 .navbar-nav{
   align-items: center;
+
+
+}
+.sidebar{
+  background-color: #121111 !important;
 }
 .navbar-brand>img{
   width: 200px;
@@ -391,4 +396,15 @@ width: 0;
   border-radius: 5px;
   padding:10px;
   
+}
+.nav-link{
+  padding: 10px 30px !important;
+}
+
+.Advsearch-container
+{
+  justify-content: end;
+}
+.Ad-btn{
+  justify-content: center;
 }

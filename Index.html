@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="Styles/Main.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -29,7 +32,8 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto  mb-2 mb-lg-0 text-white py-3">
           <li class="nav-item">
-            <a class="nav-link active text-white text-decoration-none fw-bold" aria-current="page" href="Index.html">Home</a>
+            <a class="nav-link active text-white text-decoration-none fw-bold" aria-current="page"
+              href="Index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white text-decoration-none fw-bold" href="Planspage.html">Advertisement</a>
@@ -84,19 +88,148 @@
 
     <!-- Search bar container start-->
 
-    <div class="Searchbar_container pt-4">
+    <div class="Searchbar_container pt-4 ">
       <form class="d-flex bg-white align-items-center">
-        <div class="col-xl-11 col-9">
+        <div class="col-xl-11 col-8">
           <input class="form-control border-0 fs-6" placeholder="Find models by Location/Username .." />
         </div>
-        <div class="col-xl-1 col-3 bg-white">
+        <div class="col-xl-1 col-4 bg-white">
           <button type="submit" class="w-100 btn text-white">Search</button>
         </div>
       </form>
       <div class="d-flex Advsearch-container pt-2">
-        <a href="" class="Filter_link text-decoration-none pt-2 pe-1 fw-bold">
+        <a href="" class="Filter_link text-decoration-none pt-2 pe-1 fw-bold" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">
           Advanced search
         </a>
+      </div>
+      <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header text-white " style="background-color:#c551d0 ;">
+              <h5 class="modal-title fw-bold" id="exampleModalLabel">Advanced Filter</h5>
+              <button type="button" class=" btn text-white p-0" data-bs-dismiss="modal" aria-label="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-x-lg"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                </svg>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div >
+
+                  <div class="form-check pb-4">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Verified Profile Only
+                    </label>
+                  </div>
+                  <div class="pb-4">
+
+                    <label class="fw-bold">Enter the Location:</label>
+                    <input type="text" class="form-control" />
+
+                  </div>
+                  <div class="pb-4 d-flex">
+
+                    <div class="form-check pe-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                       Incalls only
+                      </label>
+                    </div>
+                    <div class="form-check ">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Outcalls Only
+                      </label>
+                    </div>
+
+                  </div>
+                  <div class="pb-4">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Gender</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Transgender">Transgender</option>
+                    </select>
+                  </div>
+                  <div class="pb-4 ">
+                    <label class="fw-bold pb-2">Choose Category</label>
+                    <div class=" border border-1 p-2">
+                      <div class="form-check pb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                         All
+                        </label>
+                      </div>
+                      <div class="form-check pb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                         Escorts
+                        </label>
+                      </div>
+                      <div class="form-check pb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                         BDSM
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                         Bodyrub
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pb-4 ">
+                    <label class="fw-bold pb-2">Choose Profile type</label>
+                    <div class=" border border-1 p-2">
+                      <div class="form-check pb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                         Any
+                        </label>
+                      </div>
+                      <div class="form-check pb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                         Individual
+                        </label>
+                      </div>
+                      <div class="form-check pb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                         Establishment
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                        Agencies
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  
+                    <button class="btn Login_btn fw-bold text-white w-100" >
+                          Apply Filters
+                    </button>
+                </div>
+                <div id="showOrHide" style="display: none;">
+                  hi
+                </div>
+              </form>
+              <button class="btn w-100 pb-3 Filter_link fw-bold" id="Showfilter" onclick="showOrHideDiv()">
+                Show more filter
+              </button>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
     <!-- Search bar container ends-->
@@ -277,7 +410,7 @@
     </div>
     <!-- Latest profiles container Ends-->
 
-    <div class="Whatulike-container pb-3">
+    <div class="Whatulike-container py-5">
       <h4 class="fw-bold text-white">what Type of Model Do u like?</h4>
       <div class="row py-3">
         <div class="wtl-container col-xl-3 col-6 mb-5">
@@ -324,14 +457,227 @@
     </div>
 
     <!-- Popular models section starts -->
-    <div class="Popularmodels_container pt-3">
+    <div class="Popularmodels_container pb-3">
       <h4 class="text-white fw-bold pb-3">Popular Models</h4>
-      <div class=" row-cols-sm-2 row-cols-1 ">
+      <div class=" row row-cols-xl-4 row-cols-sm-2 row-cols-1 ">
         <div class="col">
           <div class="card w-100 mb-3">
             <span class="electric">Featured</span>
             <div class="position-relative">
               <img src="Images/corey-saldana-d3yqfGgjYoA-unsplash.jpg" class="card-img-top Profilecard_border"
+                alt="..." />
+              <div class="d-flex align-items-center Profileverified_bagde ">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                  </svg>
+                </span>
+                <p class="m-0 ps-1">Verified Profile</p>
+              </div>
+              <div class=" d-flex align-items-center Touring_label">
+                <div></div>
+                <div class="d-flex align-items-center">
+                  <span class="fw-bold">Feb 23-25:</span>
+                  <span class="text-secondary ps-1">Sydney</span>
+                </div>
+              </div>
+            </div>
+            <div class="Available_badge justify-content-center py-1 ">
+              <span></span>
+              <p class="m-0 ps-1 fs-6">Available 10 mins ago</p>
+            </div>
+            <div class="card-body B-inherit px-1 bg-white py-2">
+              <div class="d-flex align-items-center bg-white justify-content-between">
+                <div class="bg-white d-flex align-items-center">
+                  <p class="m-0 bg-white pe-1">
+                    From
+                  </p>
+                  <p class="bg-white fw-bold m-0 Price_txt fs-5 ">$100</p>
+                </div>
+
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="m-0 text-start fw-bold py-1 Profilecard_header">
+                    Andrea
+                  </h5>
+                </div>
+                <div>
+                  <p class="m-0">
+                    25 year
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center bg-white justify-content-between">
+                <div class="d-flex align-items-center align-content-center Location_container">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                      class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg>
+                  </span>
+                  <div class="d-flex align-items-center">
+                    <h6 class="fw-bold m-0 text-black-50 Location_txt">
+                      Sydney
+                    </h6>
+                  </div>
+                </div>
+                <div class="fs-6 fw-bold">Escort</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col">
+          <div class="card w-100 mb-3">
+            <span class="electric">Featured</span>
+            <div class="position-relative">
+              <img src="Images/corey-saldana-d3yqfGgjYoA-unsplash.jpg" class="card-img-top Profilecard_border"
+                alt="..." />
+              <div class="d-flex align-items-center Profileverified_bagde ">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                  </svg>
+                </span>
+                <p class="m-0 ps-1">Verified Profile</p>
+              </div>
+              <div class=" d-flex align-items-center Touring_label">
+                <div></div>
+                <div class="d-flex align-items-center">
+                  <span class="fw-bold">Feb 23-25:</span>
+                  <span class="text-secondary ps-1">Sydney</span>
+                </div>
+              </div>
+            </div>
+            <div class="Available_badge justify-content-center py-1 ">
+              <span></span>
+              <p class="m-0 ps-1 fs-6">Available 10 mins ago</p>
+            </div>
+            <div class="card-body B-inherit px-1 bg-white py-2">
+              <div class="d-flex align-items-center bg-white justify-content-between">
+                <div class="bg-white d-flex align-items-center">
+                  <p class="m-0 bg-white pe-1">
+                    From
+                  </p>
+                  <p class="bg-white fw-bold m-0 Price_txt fs-5 ">$100</p>
+                </div>
+
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="m-0 text-start fw-bold py-1 Profilecard_header">
+                    Andrea
+                  </h5>
+                </div>
+                <div>
+                  <p class="m-0">
+                    25 year
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center bg-white justify-content-between">
+                <div class="d-flex align-items-center align-content-center Location_container">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                      class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg>
+                  </span>
+                  <div class="d-flex align-items-center">
+                    <h6 class="fw-bold m-0 text-black-50 Location_txt">
+                      Sydney
+                    </h6>
+                  </div>
+                </div>
+                <div class="fs-6 fw-bold">Escort</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col">
+          <div class="card w-100 mb-3">
+            <span class="electric">Featured</span>
+            <div class="position-relative">
+              <img src="Images/radu-florin-OP8655xgBjo-unsplash.jpg" class="card-img-top Profilecard_border"
+                alt="..." />
+              <div class="d-flex align-items-center Profileverified_bagde ">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                  </svg>
+                </span>
+                <p class="m-0 ps-1">Verified Profile</p>
+              </div>
+              <div class=" d-flex align-items-center Touring_label">
+                <div></div>
+                <div class="d-flex align-items-center">
+                  <span class="fw-bold">Feb 23-25:</span>
+                  <span class="text-secondary ps-1">Sydney</span>
+                </div>
+              </div>
+            </div>
+            <div class="Available_badge justify-content-center py-1 ">
+              <span></span>
+              <p class="m-0 ps-1 fs-6">Available 10 mins ago</p>
+            </div>
+            <div class="card-body B-inherit px-1 bg-white py-2">
+              <div class="d-flex align-items-center bg-white justify-content-between">
+                <div class="bg-white d-flex align-items-center">
+                  <p class="m-0 bg-white pe-1">
+                    From
+                  </p>
+                  <p class="bg-white fw-bold m-0 Price_txt fs-5 ">$100</p>
+                </div>
+
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="m-0 text-start fw-bold py-1 Profilecard_header">
+                    Andrea
+                  </h5>
+                </div>
+                <div>
+                  <p class="m-0">
+                    25 year
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center bg-white justify-content-between">
+                <div class="d-flex align-items-center align-content-center Location_container">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                      class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg>
+                  </span>
+                  <div class="d-flex align-items-center">
+                    <h6 class="fw-bold m-0 text-black-50 Location_txt">
+                      Sydney
+                    </h6>
+                  </div>
+                </div>
+                <div class="fs-6 fw-bold">Escort</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col">
+          <div class="card w-100 mb-3">
+            <span class="electric">Featured</span>
+            <div class="position-relative">
+              <img src="Images/rafaella-mendes-diniz-et_78QkMMQs-unsplash.jpg" class="card-img-top Profilecard_border"
                 alt="..." />
               <div class="d-flex align-items-center Profileverified_bagde ">
                 <span>

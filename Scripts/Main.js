@@ -43,3 +43,10 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 var popover = new bootstrap.Popover(document.querySelector('.example-popover'), {
   container: 'body'
 })
+
+
+// Show filter script
+function showOrHideDiv() {
+  var v = document.getElementById("showOrHide");
+  v.style.display = "block";
+}
