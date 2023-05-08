@@ -130,6 +130,7 @@ width: 41px;
 .Overflow_txt {
   white-space: nowrap;
   overflow: hidden;
+  width: 100px;
   text-overflow: ellipsis;
 }
 .Border-10 {
@@ -317,7 +318,8 @@ width: 41px;
 .Myfacts-container > div:nth-child(1):after,
 .MyAvailblity-container > div:first-child > div:first-child:after,
 .Myrates-container > div:first-child > div:first-child:after,
-.Underline-heading > div:first-child:after {
+.Underline-heading > div:first-child:after ,
+.Models-container > div:nth-child(1)::after{
   content: "";
   width: 60px;
   height: 4px;

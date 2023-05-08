@@ -8,6 +8,7 @@
   .Main-container,
   .Myfacts-container,
   .Myrates-container,
+  .Models-container,
   .MyAvailblity-container > div:first-child {
     padding: 10px;
   }
