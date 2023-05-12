@@ -12,7 +12,11 @@
 :root {
   --primary-color: black;
   --secondary-color: #c551d0;
-  --gradient-color:linear-gradient( 105.2deg, rgba(197,81,208,1) 22.2%, rgba(180,23,136,1) 100.2% );
+  --gradient-color: linear-gradient(
+    105.2deg,
+    rgba(197, 81, 208, 1) 22.2%,
+    rgba(180, 23, 136, 1) 100.2%
+  );
 }
 body {
   background-color: black;
@@ -20,11 +24,12 @@ body {
 
 * {
   font-family: "webfont";
+  text-transform: capitalize;
 }
 .electric {
   background-color: var(--secondary-color);
   color: white;
-  padding:3px;
+  padding: 3px;
   text-transform: uppercase;
   position: absolute;
   top: 22px;
@@ -33,13 +38,11 @@ body {
   font-size: 14px;
   transform: rotate(315deg);
   font-weight: bold !important;
- 
- 
 }
 .electric:before {
   border-radius: 3px;
   content: "";
-width: 41px;
+  width: 41px;
   height: 0;
   border-style: solid;
   transform: rotate(45deg);
@@ -53,7 +56,7 @@ width: 41px;
 .electric:after {
   border-radius: 4px;
   content: "";
-width: 41px;
+  width: 41px;
   height: 0;
   border-style: solid;
   transform: rotate(-45deg);
@@ -66,22 +69,24 @@ width: 41px;
 .navbar {
   border-bottom: 1px solid #fff !important;
 }
-.navbar-nav{
+.navbar-nav {
   align-items: center;
-
-
 }
-.sidebar{
+.sidebar {
   background-color: #121111 !important;
 }
-.navbar-brand>img{
+.navbar-brand > img {
   width: 200px;
 }
-.Navbar-btn{
+.Navbar-btn {
   border-radius: 5px;
   color: #fff !important;
-  padding:10px 30px;
-  background-image: linear-gradient( 105.2deg,  rgba(197,81,208,1) 22.2%, rgba(180,23,136,1) 100.2% );
+  padding: 10px 30px;
+  background-image: linear-gradient(
+    105.2deg,
+    rgba(197, 81, 208, 1) 22.2%,
+    rgba(180, 23, 136, 1) 100.2%
+  );
 }
 .Location_container > span > svg {
   color: var(--secondary-color);
@@ -152,8 +157,8 @@ width: 41px;
   align-items: center;
   justify-items: center;
 }
-.Available_badge > span ,
-.whatulike-label > span{
+.Available_badge > span,
+.whatulike-label > span {
   background-color: transparent;
   width: 25px;
   background-repeat: no-repeat;
@@ -177,7 +182,6 @@ width: 41px;
   border-radius: inherit;
 }
 .Profileverified_bagde {
-  
   width: fit-content;
   color: #fff;
   padding: 4px 7px;
@@ -192,7 +196,6 @@ width: 41px;
 }
 
 .Carouselprofile_badge {
-
   width: fit-content;
   color: #fff;
   padding: 0px 6px;
@@ -215,7 +218,6 @@ width: 41px;
   font-size: 11px;
 }
 .Card_image {
- 
   height: 250px !important;
   object-fit: cover;
 }
@@ -298,13 +300,13 @@ width: 41px;
   border-radius: 15px;
 }
 
-.Secondary-images > .col-4>div {
+.Secondary-images > .col-4 > div {
   height: 160px;
   border-radius: 15px;
   width: 100%;
   margin: 10px 0;
 }
-.Secondary-images > .col-4>div>img{
+.Secondary-images > .col-4 > div > img {
   object-fit: cover;
   border-radius: inherit;
 }
@@ -318,15 +320,15 @@ width: 41px;
 .Myfacts-container > div:nth-child(1):after,
 .MyAvailblity-container > div:first-child > div:first-child:after,
 .Myrates-container > div:first-child > div:first-child:after,
-.Underline-heading > div:first-child:after ,
-.Models-container > div:nth-child(1)::after{
+.Underline-heading > div:first-child:after,
+.Models-container > div:nth-child(1)::after {
   content: "";
   width: 60px;
   height: 4px;
   background-color: var(--secondary-color);
   position: absolute;
 }
-.Myfacts-container>div:nth-child(2){
+.Myfacts-container > div:nth-child(2) {
   padding: 10px;
 }
 .Myfacts-lists > li::marker {
@@ -373,40 +375,51 @@ width: 41px;
   width: fit-content;
   margin: 0 10px;
 }
-.contact-container > div >button{
+.contact-container > div > button {
   width: 100%;
 }
-.similarprofile-container{
+.similarprofile-container {
   overflow-x: scroll;
 }
-.wtl-container>div:first-child{
+.wtl-container > div:first-child {
   border-radius: 15px;
   height: 200px;
   border: 4px solid var(--secondary-color);
 }
-.wtl-container>div:first-child>img{
+.wtl-container > div:first-child > img {
   object-fit: cover;
   border-radius: inherit;
 }
-.Sayword-container{
+.Sayword-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.Sayword-container>div{
+.Sayword-container > div {
   border: 1px solid var(--secondary-color);
   border-radius: 5px;
-  padding:10px;
-  
+  padding: 10px;
 }
-.nav-link{
+.nav-link {
   padding: 10px 30px !important;
 }
 
-.Advsearch-container
-{
+.Advsearch-container {
   justify-content: end;
 }
-.Ad-btn{
+.Ad-btn {
   justify-content: center;
+}
+
+.Profile-box {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.Profile-bookedinfo > .card {
+  color: #fff;
+  background-color: #191c24;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.Booking-date{
+  color: var(--secondary-color);
 }
